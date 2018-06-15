@@ -21,14 +21,13 @@ class Consumer
      */
     public function consume(DatabaseRepoInterface $repo, FormatDataInterface $formatData)
     {
+        // fetch products from the source
         $products = $this->source->getData();
 
+        // Format the products to match the database
         $products = $formatData->format($products);
 
+        // Save the products inside the database
         $repo->save($products);
     }
 }
-
-$consumer = new Consumer(new Products);
-
-$consumer->consume(new ProductDatabase(), new ProductDatabaseFormat());
