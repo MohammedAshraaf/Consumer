@@ -4,7 +4,7 @@ interface DataSourceInterface
 {
     /**
      * Gets data from the source
-     * @return mixed
+     * @return array
      */
     public function getData();
 }
