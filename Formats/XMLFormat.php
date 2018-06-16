@@ -1,12 +1,12 @@
 <?php
-
+namespace Consumer\Formats;
 
 class XMLFormat implements FormatDataInterface
 {
 
     /**
      * Formats the data for different usages
-     * @param $data SimpleXMLElement
+     * @param $data \SimpleXMLElement
      * @return mixed
      */
     public function format($data)

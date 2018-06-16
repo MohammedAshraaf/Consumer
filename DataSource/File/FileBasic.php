@@ -1,5 +1,10 @@
 <?php
 
+namespace Consumer\DataSource\File;
+
+
+use Consumer\DataSource\DataSourceInterface;
+
 abstract class FileBasic implements DataSourceInterface
 {
     /**

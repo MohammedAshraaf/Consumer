@@ -1,4 +1,5 @@
 <?php
+namespace Consumer\Formats;
 
 
 class JsonFormat implements FormatDataInterface

@@ -1,4 +1,5 @@
 <?php
+namespace Consumer\Formats;
 
 interface FormatDataInterface
 {
