@@ -21,9 +21,8 @@ class Consumer
     /**
      * Consumes the products
      * @param DatabaseRepoInterface $repo, the class responsible for dealing with database
-     * @param FormatDataInterface $formatData
      */
-    public function consume(DatabaseRepoInterface $repo, FormatDataInterface $formatData)
+    public function consume(DatabaseRepoInterface $repo)
     {
         // fetch products from the source
         $products = $this->source->getData();
