@@ -3,6 +3,10 @@
 
 class Consumer
 {
+    /**
+     * The source where the consumer fetches the data
+     * @var DataSourceInterface
+     */
     protected $source;
 
     /**
