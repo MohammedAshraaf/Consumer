@@ -7,5 +7,5 @@ interface DataSourceInterface
      * @param array $additionalOptions
      * @return array
      */
-    public function getData(array $additionalOptions = []);
+    public function getData();
 }

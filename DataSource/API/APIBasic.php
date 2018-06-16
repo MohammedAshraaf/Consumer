@@ -31,11 +31,8 @@ abstract class APIBasic implements DataSourceInterface
      * @param array $additionalOptions
      * @return array
      */
-    public function getData(array $additionalOptions = [])
+    public function getData()
     {
-        // add request options
-        $this->addRequestOptions($additionalOptions);
-
         // make the request
         $response = $this->makeRequest();
 
