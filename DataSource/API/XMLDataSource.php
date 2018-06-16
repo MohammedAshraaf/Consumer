@@ -1,5 +1,7 @@
 <?php
 
+namespace Consumer\DataSource\API;
+
 class XMLDataSource extends APIBasic
 {
     /**

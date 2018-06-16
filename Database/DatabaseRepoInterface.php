@@ -1,5 +1,5 @@
 <?php
-
+namespace Consumer\Database;
 
 interface DatabaseRepoInterface
 {

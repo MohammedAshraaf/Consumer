@@ -1,5 +1,7 @@
 <?php
 
+namespace Consumer\DataSource\File;
+
 
 class JsonFile extends FileBasic
 {

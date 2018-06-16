@@ -1,5 +1,9 @@
 <?php
 
+namespace Consumer;
+
+use Consumer\Database\DatabaseRepoInterface;
+use Consumer\DataSource\DataSourceInterface;
 
 class Consumer
 {

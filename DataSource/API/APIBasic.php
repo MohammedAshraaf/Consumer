@@ -1,5 +1,9 @@
 <?php
 
+namespace Consumer\DataSource\API;
+
+use Consumer\DataSource\DataSourceInterface;
+
 abstract class APIBasic implements DataSourceInterface
 {
     /**
@@ -95,7 +99,7 @@ abstract class APIBasic implements DataSourceInterface
         // options must be an array
         if (!is_array($options))
         {
-            throw new InvalidArgumentException('Options must be an array defined as: Setup => value');
+            throw new \InvalidArgumentException('Options must be an array defined as: Setup => value');
         }
 
         // add additional options
