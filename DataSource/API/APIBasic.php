@@ -12,7 +12,7 @@ abstract class APIBasic implements DataSourceInterface
      * The additional options for curl
      * @var array
      */
-    protected $additionalOptions = [];
+    protected $curlAdditionalOptions = [];
 
     /**
      * APIBasic constructor.
@@ -81,7 +81,7 @@ abstract class APIBasic implements DataSourceInterface
         ];
 
         // add additional configurations that set by the user
-        foreach ($this->additionalOptions as $option => $value)
+        foreach ($this->curlAdditionalOptions as $option => $value)
         {
             $curlConfig[$option] = $value;
         }
@@ -105,7 +105,7 @@ abstract class APIBasic implements DataSourceInterface
         // add additional options
         foreach ($options as $option => $value)
         {
-            $this->additionalOptions[$option] = $value;
+            $this->curlAdditionalOptions[$option] = $value;
         }
     }
 
