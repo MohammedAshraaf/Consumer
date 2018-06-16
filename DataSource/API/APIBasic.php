@@ -30,7 +30,7 @@ abstract class APIBasic implements DataSourceInterface
      * Makes the request to the desired api
      * @return mixed
      */
-    public function makeRequest()
+    protected function makeRequest()
     {
         // build the request
         $request = curl_init();
@@ -55,7 +55,7 @@ abstract class APIBasic implements DataSourceInterface
      * Sets up any additional configurations to the curl request
      * @return array
      */
-    private function setUpTheRequest()
+    protected function setUpTheRequest()
     {
         // the basic configurations
         $curlConfig = [
@@ -92,5 +92,5 @@ abstract class APIBasic implements DataSourceInterface
         }
     }
 
-    abstract function handleResponse($response, FormatDataInterface $formatData);
+    protected abstract function handleResponse($response, FormatDataInterface $formatData);
 }
