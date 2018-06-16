@@ -16,7 +16,7 @@ abstract class APIBasic implements DataSourceInterface
 
     /**
      * APIBasic constructor.
-     * @param $url
+     * @param string $url
      * @param array $additionalOptions
      */
     public function __construct($url, $additionalOptions = [])
@@ -28,7 +28,6 @@ abstract class APIBasic implements DataSourceInterface
 
     /**
      * Gets data from the source
-     * @param array $additionalOptions
      * @return array
      */
     public function getData()
