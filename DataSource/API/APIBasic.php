@@ -23,7 +23,7 @@ abstract class APIBasic implements DataSourceInterface
     {
         $this->url = $url;
 
-        $this->additionalOptions = $additionalOptions;
+        $this->curlAdditionalOptions = $additionalOptions;
     }
 
     /**
