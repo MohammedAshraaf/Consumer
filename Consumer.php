@@ -24,9 +24,6 @@ class Consumer
         // fetch products from the source
         $products = $this->source->getData();
 
-        // Format the products to match the database
-        $products = $formatData->format($products);
-
         // Save the products inside the database
         $repo->save($products);
     }
