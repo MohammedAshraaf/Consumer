@@ -3,18 +3,6 @@
 class XMLDataSource extends APIBasic
 {
     /**
-     * XMLDataSource constructor.
-     * @param $url
-     * @param array $additionalOptions
-     */
-    public function __construct($url, $additionalOptions = [])
-    {
-        $this->url = $url;
-
-        $this->additionalOptions = $additionalOptions;
-    }
-
-    /**
      * Gets data from the source
      * @param array $additionalOptions
      * @return array

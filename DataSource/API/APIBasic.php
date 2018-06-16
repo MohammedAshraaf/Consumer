@@ -15,6 +15,18 @@ abstract class APIBasic implements DataSourceInterface
     protected $additionalOptions = [];
 
     /**
+     * APIBasic constructor.
+     * @param $url
+     * @param array $additionalOptions
+     */
+    public function __construct($url, $additionalOptions = [])
+    {
+        $this->url = $url;
+
+        $this->additionalOptions = $additionalOptions;
+    }
+
+    /**
      * Makes the request to the desired api
      * @return mixed
      */
