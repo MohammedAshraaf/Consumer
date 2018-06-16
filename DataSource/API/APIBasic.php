@@ -37,7 +37,7 @@ abstract class APIBasic implements DataSourceInterface
         $response = $this->makeRequest();
 
         // return the data after handling it as required
-        return $this->handleResponse($response, new JsonFormat());
+        return $this->handleResponse($response);
     }
 
     /**
@@ -106,5 +106,10 @@ abstract class APIBasic implements DataSourceInterface
         }
     }
 
-    protected abstract function handleResponse($response, FormatDataInterface $formatData);
+    /**
+     * Handles response as required
+     * @param $response
+     * @return mixed
+     */
+    protected abstract function handleResponse($response);
 }
